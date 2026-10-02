@@ -2,7 +2,7 @@
 
 Polski landing page bezpłatnego menedżera schowka dla Windows 11.
 
-- Strona: https://apkmasondev.github.io/clipboard-website/
+- Strona: https://apkmason.dev/clipboard-website/
 - Aplikacja: https://github.com/apkmasondev/clipboard
 - Repozytorium strony: https://github.com/apkmasondev/clipboard-website
 
@@ -57,3 +57,7 @@ Oryginalny kod strony jest objęty **Super Clipboard Free Use License 1.0**: bez
 Manrope: Mikhail Sharanda, Mirko Velimirovic i współtwórcy; SIL Open Font License 1.1, pełny tekst w `assets/OFL-Manrope.txt`. Font pochodzi z [oficjalnego repozytorium Google Fonts](https://github.com/google/fonts/tree/main/ofl/manrope). Pozostałe grafiki to ikona Super Clipboard, zrzuty jego interfejsu i proste elementy SVG/CSS strony.
 
 Nie dodawaj do repozytorium baz schowka, kopii `.scbackup`, plików `.env`, tokenów, certyfikatów, prywatnych screenów ani konfiguracji konta. `.gitignore` ogranicza przypadkowe dodanie typowych plików prywatnych; przed publikacją nadal przejrzyj diff i listę plików.
+
+### Domena produkcyjna
+
+GitHub Pages dziedziczy istniejącą domenę konta, dlatego publiczny adres tej strony to `https://apkmason.dev/clipboard-website/`. Adres `apkmasondev.github.io/clipboard-website/` przekierowuje do niego. Domena korzysta również z Cloudflare. Projekt nie zmienia DNS, ustawień domeny głównej ani innych stron konta.

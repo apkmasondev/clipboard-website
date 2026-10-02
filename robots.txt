@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://apkmasondev.github.io/clipboard-website/sitemap.xml
+Sitemap: https://apkmason.dev/clipboard-website/sitemap.xml
