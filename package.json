@@ -1,0 +1,17 @@
+{
+  "name": "super-clipboard-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Polska strona Super Clipboard — statyczna, bez zależności runtime.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "preview": "node scripts/serve.mjs dist"
+  },
+  "license": "SEE LICENSE IN LICENSE"
+}

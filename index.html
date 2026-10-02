@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f2f1e9" />
+    <meta
+      name="description"
+      content="Super Clipboard — bezpłatny menedżer schowka dla Windows 11. Historia kopiowania, snippety, szablony i szybkie wklejanie. Lokalnie, bez konta i abonamentu."
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:title" content="Super Clipboard — skopiowane nie znaczy zapomniane." />
+    <meta
+      property="og:description"
+      content="Historia schowka i Twoje najlepsze teksty. Zawsze pod ręką. Bezpłatnie na Windows 11."
+    />
+    <meta property="og:url" content="https://apkmasondev.github.io/clipboard-website/" />
+    <meta
+      property="og:image"
+      content="https://apkmasondev.github.io/clipboard-website/assets/snippets-dark.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Super Clipboard — biblioteka snippetów w ciemnym motywie"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://apkmasondev.github.io/clipboard-website/" />
+    <link rel="icon" href="assets/favicon.ico" sizes="any" />
+    <link rel="preload" href="assets/manrope.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <title>Super Clipboard — Twój schowek ma dobrą pamięć.</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#tresc">Przejdź do treści</a>
+    <header class="site-header wrap">
+      <a class="brand" href="#" aria-label="Super Clipboard — początek strony"
+        ><span class="brand-mark" aria-hidden="true"
+          ><svg viewBox="0 0 32 32">
+            <rect x="8" y="7" width="17" height="22" rx="3" />
+            <path d="M12 8V4h9v4zM4 12v12M13 15h7M13 20h5" /></svg></span
+        ><span
+          >super<span class="brand-second">clipboard</span><span class="brand-period">.</span></span
+        ></a
+      >
+      <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false">
+        Menu <span aria-hidden="true">＋</span>
+      </button>
+      <nav id="navigation" aria-label="Menu główne">
+        <a href="#mozliwosci">Możliwości</a><a href="#snippety">Snippety</a
+        ><a href="#prywatnosc">Prywatność</a>
+        <a class="nav-download" href="#pobierz"
+          >Pobierz za darmo <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+    <main id="tresc">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="eyebrow">
+          <span class="status-dot" aria-hidden="true"></span> MAŁA APLIKACJA. DOBRA PAMIĘĆ.
+          <span class="hero-version">DLA WINDOWS / V1.1.0</span>
+        </div>
+        <div class="hero-grid">
+          <h1 id="hero-title">
+            Skopiowane.<br /><span class="hero-last"
+              >Niezapomniane<svg aria-hidden="true" viewBox="0 0 710 22" preserveAspectRatio="none">
+                <path d="M3 16Q330 0 707 11" /></svg></span
+            ><span class="accent">.</span>
+          </h1>
+          <div class="hero-aside">
+            <p>Ten link. Tamten fragment kodu.<br />Prompt, który w końcu zadziałał.</p>
+            <p>Twój schowek może pamiętać więcej.<br />Ty możesz wrócić do swojej pracy.</p>
+            <a class="button button-dark" href="#pobierz"
+              >Poznaj swój nowy schowek <span aria-hidden="true">↓</span></a
+            ><span class="micro">Bezpłatnie. Bez konta. Na Twoim komputerze.</span>
+          </div>
+        </div>
+        <div class="product-heading">
+          <span><span class="tiny-square" aria-hidden="true"></span> SUPER CLIPBOARD W AKCJI</span
+          ><span>MNIEJ SZUKANIA. WIĘCEJ ROBIENIA.</span>
+        </div>
+        <div class="hero-stage">
+          <div class="stage-note">
+            <span class="note-index">01 / TWOJA PAMIĘĆ PODRĘCZNA</span>
+            <p>Wszystko, co warto<br />mieć <em>jeszcze raz.</em></p>
+            <div class="key-combo" aria-label="Control plus Shift plus V">
+              <kbd>Ctrl</kbd><span>+</span><kbd>Shift</kbd><span>+</span><kbd>V</kbd>
+            </div>
+            <span class="note-caption">Jeden skrót. I jesteś z powrotem.</span
+            ><svg class="hand-arrow" viewBox="0 0 160 110" aria-hidden="true">
+              <path d="M12 10C2 90 65 108 135 66M111 67l27-3-8 26" />
+            </svg>
+          </div>
+          <figure class="hero-screen">
+            <div class="screen-chrome">
+              <span><i></i> Super Clipboard</span
+              ><span aria-hidden="true">— &nbsp; □ &nbsp; ×</span>
+            </div>
+            <a
+              href="assets/snippets-dark.jpg"
+              class="screen-zoom"
+              data-lightbox
+              aria-label="Powiększ zrzut biblioteki snippetów"
+              ><img
+                src="assets/snippets-dark.jpg"
+                width="1280"
+                height="720"
+                alt="Biblioteka snippetów: zapisany prompt do przeglądu kodu, wyszukiwarka i panel podglądu"
+                fetchpriority="high"
+              /><span class="zoom-hint">Powiększ <span aria-hidden="true">↗</span></span></a
+            >
+          </figure>
+        </div>
+        <div class="hero-footnote">
+          <span>Rzeczywisty interfejs · przykładowe dane</span
+          ><span>Historia + snippety + szybkie wklejanie</span>
+        </div>
+      </section>
+
+      <section class="workflow wrap section-space" id="mozliwosci" aria-labelledby="workflow-title">
+        <div class="section-label">
+          <span>01 — MNIEJ PRZERYWANIA</span><span aria-hidden="true">↙</span>
+        </div>
+        <div class="section-intro">
+          <h2 id="workflow-title">Nie zaczynaj<br />od szukania.</h2>
+          <p>
+            W pracy wystarczająco dużo rzeczy wymaga Twojej uwagi. Odnajdywanie czegoś, co przed
+            chwilą było w schowku, nie musi być jedną z nich.
+          </p>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-number">01</span>
+            <h3>Kopiuj jak zawsze.</h3>
+            <p>Tekst, link, kod, kolor, obraz. Super Clipboard zapisuje historię w tle.</p>
+            <div class="step-bottom">
+              <kbd>Ctrl</kbd><span>+</span><kbd>C</kbd
+              ><span class="step-arrow" aria-hidden="true">→</span>
+            </div>
+          </li>
+          <li>
+            <span class="step-number">02</span>
+            <h3>Znajdź po swojemu.</h3>
+            <p>Otwórz szybkie okno. Wpisz fragment tekstu i wybierz właściwy wynik strzałkami.</p>
+            <div class="step-bottom">
+              <kbd>Ctrl</kbd><span>+</span><kbd>Shift</kbd><span>+</span><kbd>V</kbd
+              ><span class="step-arrow" aria-hidden="true">→</span>
+            </div>
+          </li>
+          <li>
+            <span class="step-number">03</span>
+            <h3>Wracaj do pracy.</h3>
+            <p>
+              Enter wkleja wybrany element do poprzedniej aplikacji. Bez odrywania rąk od
+              klawiatury.
+            </p>
+            <div class="step-bottom">
+              <kbd>Enter ↵</kbd><span class="step-arrow" aria-hidden="true">✓</span>
+            </div>
+          </li>
+        </ol>
+        <div class="formats">
+          <span>W JEDNYM MIEJSCU</span>
+          <p>
+            Tekst <i>/</i> Linki <i>/</i> Kod i JSON <i>/</i> Obrazy <i>/</i> Kolory <i>/</i> Pliki
+          </p>
+        </div>
+      </section>
+
+      <section class="snippet-section" id="snippety" aria-labelledby="snippet-title">
+        <div class="wrap section-space">
+          <div class="section-label">
+            <span>02 — TWOJE NAJLEPSZE TEKSTY</span><span>NA STAŁE, NIE NA CHWILĘ</span>
+          </div>
+          <div class="snippet-grid">
+            <div class="snippet-copy">
+              <h2 id="snippet-title">Dobre słowa<br />zasługują na<br /><em>drugie użycie.</em></h2>
+              <p>
+                Nie pisz tego samego po raz dziesiąty. Zbuduj własną bibliotekę promptów, wiadomości
+                i komend. Nadaj im nazwy, tagi i skróty. Znajduj je wtedy, kiedy są potrzebne.
+              </p>
+              <a class="text-link" href="#interfejs"
+                >Zajrzyj do biblioteki <span aria-hidden="true">↗</span></a
+              >
+            </div>
+            <div class="snippet-example">
+              <div class="example-top">
+                <span class="mini-clipboard" aria-hidden="true">↳</span><span>TWOJA BIBLIOTEKA</span
+                ><span>PRZYKŁAD</span>
+              </div>
+              <h3>Prompt, który robi robotę.</h3>
+              <div class="example-tags"><span>Praca z AI</span><span>review</span></div>
+              <blockquote>
+                Przeanalizuj kod pod kątem błędów, bezpieczeństwa i przypadków brzegowych.<br /><br />Dla
+                każdej uwagi podaj konkretny scenariusz, jego wpływ i propozycję poprawki.<br /><br /><strong
+                  >Odróżnij fakty od przypuszczeń.</strong
+                >
+              </blockquote>
+              <div class="example-bottom">
+                <span>Zapisz raz. Używaj po swojemu.</span><span aria-hidden="true">↗</span>
+              </div>
+            </div>
+          </div>
+          <div class="snippet-extras">
+            <div>
+              <span class="feature-index">/01</span>
+              <h3>Szablony z polami</h3>
+              <p>
+                Dodaj <code>{{imię}}</code> lub <code>{{projekt}}</code>. Uzupełnij wartości tuż
+                przed użyciem.
+              </p>
+            </div>
+            <div>
+              <span class="feature-index">/02</span>
+              <h3>Historia zmian</h3>
+              <p>
+                Wróć do jednej z 10 ostatnich wersji treści snippetu, gdy poprzednia była lepsza.
+              </p>
+            </div>
+            <div>
+              <span class="feature-index">/03</span>
+              <h3>Biblioteka do zabrania</h3>
+              <p>Import i eksport JSON oraz szyfrowana kopia biblioteki chroniona Twoim hasłem.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="interface-section wrap section-space"
+        id="interfejs"
+        aria-labelledby="interface-title"
+      >
+        <div class="section-label">
+          <span>03 — WSZYSTKO NA SWOIM MIEJSCU</span><span aria-hidden="true">↙</span>
+        </div>
+        <div class="section-intro">
+          <h2 id="interface-title">Porządek, który<br />po prostu widać.</h2>
+          <p>
+            Lista pośrodku, szczegóły obok. Wyszukiwanie, filtry, przypięte wpisy i tagi. Wybierz
+            jasny lub ciemny motyw i urządź schowek po swojemu.
+          </p>
+        </div>
+        <div class="gallery-controls" role="group" aria-label="Wybierz zrzut ekranu">
+          <button type="button" data-screen="history-dark" aria-pressed="true">
+            Historia <span>Ciemny motyw</span></button
+          ><button type="button" data-screen="snippets-dark" aria-pressed="false">
+            Snippety <span>Ciemny motyw</span></button
+          ><button type="button" data-screen="history-light" aria-pressed="false">
+            Historia <span>Jasny motyw</span>
+          </button>
+        </div>
+        <figure class="gallery">
+          <a href="assets/history-dark.jpg" data-lightbox aria-label="Powiększ wybrany zrzut ekranu"
+            ><img
+              id="gallery-image"
+              src="assets/history-dark.jpg"
+              width="1280"
+              height="720"
+              alt="Historia schowka w ciemnym motywie: lista wpisów i podgląd JSON"
+              loading="lazy"
+              decoding="async"
+            /><span class="zoom-hint">Powiększ ↗</span></a
+          >
+          <figcaption id="gallery-caption" aria-live="polite">
+            Historia schowka · ciemny motyw · przykładowe dane
+          </figcaption>
+        </figure>
+        <div class="transform-row">
+          <div>
+            <span class="eyebrow">JESZCZE JEDNA RZECZ</span>
+            <h3>Tekst gotowy<br />do wklejenia.</h3>
+          </div>
+          <p>
+            Uporządkuj JSON, usuń duplikaty linii albo zbędne spacje. Zmień wielkość liter, zakoduj
+            URL lub Base64. Sprawdź wynik przed skopiowaniem — oryginał zostaje w historii.
+          </p>
+          <div class="transform-visual" aria-label="Przykład formatowania JSON">
+            <code>{"pomysł":"gotowe"}</code
+            ><span aria-hidden="true">↓ &nbsp; JSON pretty print</span>
+            <pre>
+{
+  "pomysł": "gotowe"
+}</pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="privacy-section" id="prywatnosc" aria-labelledby="privacy-title">
+        <div class="wrap section-space">
+          <div class="section-label">
+            <span>04 — PRYWATNE POZOSTAJE PRYWATNE</span><span>LOKALNIE Z ZAŁOŻENIA</span>
+          </div>
+          <div class="privacy-grid">
+            <div>
+              <div class="privacy-symbol" aria-hidden="true">
+                <svg viewBox="0 0 100 110">
+                  <path d="M50 5 89 20v31c0 28-20 43-39 54C31 94 11 79 11 51V20z" />
+                  <rect x="34" y="45" width="32" height="28" rx="3" />
+                  <path d="M41 45v-9a9 9 0 0 1 18 0v9M50 56v8" />
+                </svg>
+              </div>
+              <h2 id="privacy-title">
+                Twój schowek.<br />Twój komputer.<br /><span>Twoje zasady.</span>
+              </h2>
+              <p class="privacy-lead">
+                Bez konta. Bez chmury. Bez telemetrii.<br />Treść schowka nie trafia na nasze
+                serwery.<br />Nie mamy takich serwerów.
+              </p>
+            </div>
+            <div class="privacy-details">
+              <article>
+                <span>01</span>
+                <div>
+                  <h3>Dane chronione przez Windows</h3>
+                  <p>
+                    Treści i opisy są szyfrowane lokalnie mechanizmem DPAPI, powiązanym z Twoim
+                    kontem Windows.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>02</span>
+                <div>
+                  <h3>Ty wybierasz, co pamiętać</h3>
+                  <p>
+                    Wyklucz aplikacje i typy danych. Wstrzymaj historię w każdej chwili. Popularne
+                    menedżery haseł są domyślnie na liście wykluczeń.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>03</span>
+                <div>
+                  <h3>Historia z rozsądnymi granicami</h3>
+                  <p>
+                    Ustaw limit liczby wpisów, wieku i rozmiaru historii. Przypięte elementy i
+                    trwałe snippety zostają pod Twoją kontrolą.
+                  </p>
+                </div>
+              </article>
+              <a
+                class="text-link"
+                href="https://github.com/apkmasondev/clipboard/blob/main/PRIVACY.md"
+                >Przeczytaj zasady prywatności aplikacji <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section wrap section-space" aria-labelledby="faq-title">
+        <div class="faq-heading">
+          <span class="eyebrow">ZANIM ZACZNIESZ</span>
+          <h2 id="faq-title">Warto wiedzieć.</h2>
+          <p>Krótko i bez drobnego druku.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>
+              Czy aplikacja naprawdę jest bezpłatna?<span aria-hidden="true">＋</span>
+            </summary>
+            <div>
+              <p>
+                Tak. Możesz bezpłatnie używać jej prywatnie i w pracy, także komercyjnej. Licencja
+                zabrania sprzedaży aplikacji i jej przeróbek. Kod jest publicznie dostępny, ale nie
+                jest objęty licencją open source zatwierdzoną przez OSI.
+              </p>
+              <a href="https://github.com/apkmasondev/clipboard/blob/main/LICENSE"
+                >Pełna treść licencji ↗</a
+              >
+            </div>
+          </details>
+          <details>
+            <summary>Na jakim systemie działa?<span aria-hidden="true">＋</span></summary>
+            <div>
+              <p>
+                Super Clipboard jest przeznaczony dla Windows 11 w wersji x64. Korzysta z Microsoft
+                WebView2, który zwykle jest już zainstalowany. Jeśli go brakuje, instalator może
+                pobrać go od Microsoftu. Autostart jest opcjonalny.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>
+              Dlaczego Windows może ostrzegać przy instalacji?<span aria-hidden="true">＋</span>
+            </summary>
+            <div>
+              <p>
+                Instalator wersji 1.1.0 nie ma płatnego podpisu Authenticode, więc Windows może
+                wyświetlić informację o nieznanym wydawcy. Pobieraj plik z oficjalnego wydania na
+                GitHubie. Możesz zweryfikować jego sumę SHA-256. Nie musisz wyłączać zabezpieczeń
+                systemu.
+              </p>
+              <a
+                href="https://github.com/apkmasondev/clipboard/releases/download/v1.1.0/SHA256SUMS.txt"
+                >Sumy kontrolne wydania ↗</a
+              >
+            </div>
+          </details>
+          <details>
+            <summary>
+              Czy schowek rozpoznaje wszystkie sekrety?<span aria-hidden="true">＋</span>
+            </summary>
+            <div>
+              <p>
+                Nie. Opcjonalny filtr rozpoznaje wybrane wzorce tokenów i kluczy, ale nie zastępuje
+                ostrożności. Wykluczenia działają na poziomie aplikacji, nie pojedynczych kart
+                przeglądarki. W razie potrzeby wstrzymaj historię przed skopiowaniem wrażliwych
+                danych.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>
+              Co zawiera szyfrowana kopia zapasowa?<span aria-hidden="true">＋</span>
+            </summary>
+            <div>
+              <p>
+                Plik .scbackup zawiera bieżącą bibliotekę snippetów, kategorie, tagi, ulubione i
+                szablony. Nie obejmuje historii schowka, ustawień ani poprzednich wersji snippetów.
+                Zabezpiecz go silnym hasłem — zapomnianego hasła nie da się odzyskać. Zwykły eksport
+                JSON nie jest szyfrowany.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>
+              Jak aktualizować aplikację lub zgłosić błąd?<span aria-hidden="true">＋</span>
+            </summary>
+            <div>
+              <p>
+                Nowe wersje pobierzesz z sekcji Releases na GitHubie. Aplikacja nie pobiera
+                aktualizacji automatycznie. Błędy i pomysły zgłaszaj w Issues; nie dołączaj
+                prywatnej zawartości schowka.
+              </p>
+              <a href="https://github.com/apkmasondev/clipboard/issues"
+                >Zgłoś problem lub pomysł ↗</a
+              >
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section class="download-section wrap" id="pobierz" aria-labelledby="download-title">
+        <div class="download-top">
+          <span class="eyebrow">DOBRE NARZĘDZIE. MNIEJ TARCIA.</span
+          ><span class="release-label">WYDANIE 1.1.0</span>
+        </div>
+        <div class="download-grid">
+          <h2 id="download-title">Zrób miejsce<br />na <em>ważniejsze.</em></h2>
+          <div>
+            <p>Schowek niech pamięta resztę.</p>
+            <a
+              class="button button-dark download-button"
+              href="https://github.com/apkmasondev/clipboard/releases/download/v1.1.0/Super.Clipboard_1.1.0_x64-setup.exe"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5" /></svg
+              >Pobierz na Windows<span aria-hidden="true">↗</span></a
+            ><span class="download-meta">Windows 11 · x64 · instalator 3,1 MiB</span>
+            <p class="installer-note">
+              Bezpłatnie również do pracy. Instalator nie jest podpisany — Windows może pokazać
+              ostrzeżenie o wydawcy.
+            </p>
+            <a class="text-link" href="https://github.com/apkmasondev/clipboard/releases/tag/v1.1.0"
+              >Szczegóły wydania i suma kontrolna <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+        <div class="download-bottom">
+          <span>BEZ KONTA</span><span>BEZ ABONAMENTU</span><span>Z DOBRĄ PAMIĘCIĄ</span>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <a class="brand footer-brand" href="#">superclipboard<span class="brand-period">.</span></a>
+      <div>
+        <a href="https://github.com/apkmasondev/clipboard">Kod aplikacji ↗</a
+        ><a href="https://github.com/apkmasondev/clipboard/issues">Kontakt i pomysły ↗</a
+        ><a href="https://github.com/apkmasondev/clipboard/blob/main/LICENSE">Licencja ↗</a>
+      </div>
+      <p>© 2026 apkmasondev. Zrobione, żeby ułatwiać pracę.</p>
+      <p class="site-privacy">
+        Ta strona nie używa analityki ani cookies. Hosting GitHub Pages może rejestrować dane
+        techniczne połączenia.
+        <a
+          href="https://docs.github.com/pl/site-policy/privacy-policies/github-general-privacy-statement"
+          >Prywatność hostingu ↗</a
+        >
+      </p>
+    </footer>
+    <dialog class="lightbox" aria-labelledby="lightbox-caption">
+      <button class="lightbox-close" type="button" aria-label="Zamknij powiększenie">
+        Zamknij <span aria-hidden="true">×</span></button
+      ><img width="1280" height="720" alt="" />
+      <p id="lightbox-caption"></p>
+    </dialog>
+  </body>
+</html>
