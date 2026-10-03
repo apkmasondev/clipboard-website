@@ -31,8 +31,8 @@ test('Wydanie i instalator wskazują ten sam publiczny release', () => {
     ),
   ];
   assert.ok(downloads.length >= 2);
-  for (const [, version] of downloads) assert.equal(version, 'v1.1.0');
-  assert.ok(downloads.some(([, , file]) => file === 'Super.Clipboard_1.1.0_x64-setup.exe'));
+  for (const [, version] of downloads) assert.equal(version, 'v1.1.1');
+  assert.ok(downloads.some(([, , file]) => file === 'Super.Clipboard_1.1.1_x64-setup.exe'));
   assert.match(html, /Instalator nie jest podpisany/);
 });
 test('Obrazy mają opisy i wymiary, strona ma jeden nagłówek główny', () => {
